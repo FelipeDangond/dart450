@@ -1,0 +1,16 @@
+/*
+
+Ugly
+Pippin Barr
+
+*/
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 1.5em;
+}
+
+.image {
+  position: absolute;
+  z-index: -1;
+}
