@@ -7,7 +7,7 @@ Create a personal webpage/landing page(s) that reflects some aspect(s) of your o
 
 */
 
-$(document).ready(function initialfunction() {
+$(document).ready(function () {
 
 
   var floatSide = [ "right", "left"];
@@ -168,6 +168,4 @@ $( "#eighteen" ).click(function() {
 
 $( "#nineteen" ).click(function() {
   $( "#twenty" ).show();
-});
-
 });
