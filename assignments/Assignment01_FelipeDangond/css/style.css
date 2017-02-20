@@ -10,6 +10,7 @@ Css for styling the divs
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body  {
@@ -23,11 +24,11 @@ body  {
 
 
 
-#three, #five, #seven, #nine, #eleven {
-  position: absolute;
+#one, #three, #five, #seven, #nine, #eleven, #thirteen, #fifteen, #seventeen, #nineteen{
+  position: relative;
 }
 
-#two, #four, #six, #eight, #ten {
-  position: relative;
+#two, #four, #six, #eight, #ten, #twelve, #fourteen, #sixteen, #eighteen, #twenty {
+  position: absolute;
 
 }

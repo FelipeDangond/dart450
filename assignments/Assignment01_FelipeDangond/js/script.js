@@ -1,13 +1,17 @@
 /*
 
-Title of project
-Author's name
+Dart 450 - Assignment 01: Interactive Personality
+Felipe Dangond
 
-Description of this script in the context of the project
+Create a personal webpage/landing page(s) that reflects some aspect(s) of your online personality.
 
 */
 
-$(document).ready(function() {
+$(document).ready(function initialfunction() {
+
+  var sound = new Audio("click.wav");
+  sound.preload = 'auto';
+  sound.load();
 
   var floatSide = [ "right", "left"];
   var borderStyles = [ "dotted", "dashed", "solid", "double", "groove", "ridge", "inset", "outset"];
@@ -15,6 +19,13 @@ $(document).ready(function() {
   var num2;
   num=Math.floor(Math.random()*2);
   num2=Math.floor(Math.random()*8);
+
+  function playSound(volume) {
+  var click= sound.cloneNode();
+  click.volume=volume;
+  click.play();
+}
+
 
 
   //function for the randomization of colors
@@ -68,22 +79,103 @@ randomizeColorAndSize();
 
 
 //hide and show the divs
+// I tried implementing alerts saying facts about me and my personnality but everytime you would click the next div,
+//...it would recall the previous alerts
+
+$("div").hide();
 
 
-$("*").hide();
 
-$("*").click (function(){
-  $(this).data('clicked', true);
+$( "body" ).click(function() {
+
+
+//  alert ("I'm Felipe, nice to meet you.")
+  $( "#one" ).show();
+});
+
+$( "#one" ).click(function() {
+//  alert ("I'm a studying computation arts at Concordia, I'm 19 years old and I was born in Colombia.")
+  $( "#two" ).show();
 });
 
 
- if ($("div").data('clicked', false)){
-    $("div").show()
+$( "#two" ).click(function() {
+//  alert ("I'm really into web design and mostly net.art. I love creating new things and changing conventional structures")
+  $( "#three" ).show();
+});
 
-  }
-    else if ($("div").data('clicked',true)){
-      $("div").hide();
-      console.log("hey")
-    }
+
+$( "#three" ).click(function() {
+  $( "#four" ).show();
+//  alert("I have a passion for fashion, tech, old country music, discovering treasures in thriftshops.")
+});
+
+
+$( "#four" ).click(function() {
+  $( "#five" ).show();
+//  alert("I have a slight addiction to coffee and wine")
+});
+
+
+$( "#five" ).click(function() {
+  $( "#six" ).show();
+});
+
+
+$( "#six" ).click(function() {
+  $( "#seven" ).show();
+});
+
+$( "#seven" ).click(function() {
+  $( "#eight" ).show();
+});
+
+$( "#eight" ).click(function() {
+  $( "#nine" ).show();
+});
+
+$( "#nine" ).click(function() {
+  $( "#ten" ).show();
+});
+
+$( "#ten" ).click(function() {
+  $( "#eleven" ).show();
+});
+
+$( "#eleven" ).click(function() {
+  $( "#twelve" ).show();
+});
+
+$( "#twelve" ).click(function() {
+  $( "#thirteen" ).show();
+});
+
+$( "#thirteen" ).click(function() {
+  $( "#fourteen" ).show();
+});
+
+$( "#fourteen" ).click(function() {
+  $( "#fifteen" ).show();
+});
+
+$( "#fifteen" ).click(function() {
+  $( "#sixteen" ).show();
+});
+
+$( "#sixteen" ).click(function() {
+  $( "#seventeen" ).show();
+});
+
+$( "#seventeen" ).click(function() {
+  $( "#eighteen" ).show();
+});
+
+$( "#eighteen" ).click(function() {
+  $( "#nineteen" ).show();
+});
+
+$( "#nineteen" ).click(function() {
+  $( "#twenty" ).show();
+});
 
 });
