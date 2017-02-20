@@ -7,7 +7,7 @@ Create a personal webpage/landing page(s) that reflects some aspect(s) of your o
 
 */
 
-$(document).ready(function () {
+$(document).ready(function() {
 
 
   var floatSide = [ "right", "left"];
@@ -17,7 +17,6 @@ $(document).ready(function () {
   num=Math.floor(Math.random()*2);
   num2=Math.floor(Math.random()*8);
 
-}
 
 
 
@@ -78,8 +77,8 @@ randomizeColorAndSize();
 $("div").hide();
 
 
-$( "body" ).click(function() {
 
+$( "body" ).click(function() {
 
 //  alert ("I'm Felipe, nice to meet you.")
   $( "#one" ).show();
@@ -168,4 +167,6 @@ $( "#eighteen" ).click(function() {
 
 $( "#nineteen" ).click(function() {
   $( "#twenty" ).show();
+});
+
 });
