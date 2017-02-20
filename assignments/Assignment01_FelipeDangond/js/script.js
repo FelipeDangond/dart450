@@ -9,9 +9,6 @@ Create a personal webpage/landing page(s) that reflects some aspect(s) of your o
 
 $(document).ready(function initialfunction() {
 
-  var sound = new Audio("click.wav");
-  sound.preload = 'auto';
-  sound.load();
 
   var floatSide = [ "right", "left"];
   var borderStyles = [ "dotted", "dashed", "solid", "double", "groove", "ridge", "inset", "outset"];
@@ -20,10 +17,6 @@ $(document).ready(function initialfunction() {
   num=Math.floor(Math.random()*2);
   num2=Math.floor(Math.random()*8);
 
-  function playSound(volume) {
-  var click= sound.cloneNode();
-  click.volume=volume;
-  click.play();
 }
 
 
@@ -83,7 +76,6 @@ randomizeColorAndSize();
 //...it would recall the previous alerts
 
 $("div").hide();
-
 
 
 $( "body" ).click(function() {
