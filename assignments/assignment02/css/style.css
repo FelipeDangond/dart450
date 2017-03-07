@@ -9,7 +9,8 @@ Some description of the CSS styling
 
 
 * {
+  font-style: italic;
   font-size: 40px;
   font-family: Helvetica sans-serif;
-  font-weight: bold; 
+  font-weight: bold;
 }
