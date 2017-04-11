@@ -24,18 +24,22 @@ var colors = [
 ];
 
 var marginRights = [
-  "0px", "2px", "4px", "5px", "10px", "20px"
+  "0px", "90px", "4px", "5px", "10px", "20px"
 ];
 
 var transforms = [
-  "rotateZ(100deg)", "rotateZ(0)", "rotateZ(0)", "rotateZ(0)", "rotateZ(0)", "rotateZ(0)", "rotateZ(0)", "rotateZ(10deg)", "rotateZ(20deg)", "rotateZ(0deg)"
+  "rotateZ(100deg)", "rotateZ(0)", "rotateZ(100deg)", "rotateZ(500deg)", "rotateZ(400deg)", "rotateZ(-700deg)", "rotateZ(0)", "rotateZ(10deg)", "rotateZ(20deg)", "rotateZ(0deg)"
 ]
 
 var backgroundColors = ["red", "black", "yellow", "green","grey"]
 
 var borders = [
-  "0px", "1px solid", "1px dotted", "2px solid", "2px dotted"
+  "19px", "6px solid", "15px dotted", "2px solid", "2px dotted"
 ];
+
+
+
+
 
 $(document).ready(function() {
 
